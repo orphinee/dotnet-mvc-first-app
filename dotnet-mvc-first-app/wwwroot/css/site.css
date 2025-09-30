@@ -1,31 +1,167 @@
-html {
-  font-size: 14px;
+/*
+=========================================================
+==      TEMA KUSTOM UTAMA V3 - TERINTEGRASI         ==
+== (Menggabungkan Gaya Dashboard & Halaman Login)  ==
+=========================================================
+*/
+
+/* -- 1. PALET WARNA UTAMA -- */
+:root {
+    --blue-darkest: #0D47A1;
+    --blue-dark: #1565C0;
+    --blue-medium: #1E88E5;
+    --blue-light: #42A5F5;
+    --blue-lightest-bg: #E3F2FD;
+    --blue-lightest-text: #1a4a7a;
+    --c-white-text: #ffffff;
+    --c-dark-text: #343a40;
 }
 
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+
+/*
+=================================================
+==          GAYA UNTUK DASHBOARD UTAMA         ==
+=================================================
+*/
+
+/* -- 2. SIDEBAR BIRU TUA SOLID -- */
+.main-sidebar {
+    background-color: var(--blue-darkest) !important;
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+/* Teks dan ikon di sidebar menjadi putih */
+.brand-link .brand-text,
+.user-panel .info a,
+.nav-sidebar .nav-link p,
+.nav-sidebar .nav-link i {
+    color: var(--c-white-text) !important;
 }
 
-html {
-  position: relative;
-  min-height: 100%;
+/* Garis pemisah di sidebar */
+.brand-link,
+.user-panel {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
 }
 
-body {
-  margin-bottom: 60px;
+/* Hover dan item menu aktif di sidebar */
+.nav-pills .nav-sidebar .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
 }
 
-.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
-  color: var(--bs-secondary-color);
-  text-align: end;
+.nav-pills .nav-sidebar .nav-link.active {
+    background-color: var(--blue-medium) !important;
+    color: var(--c-white-text) !important;
 }
 
-.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
-  text-align: start;
+    .nav-pills .nav-sidebar .nav-link.active i {
+        color: var(--c-white-text) !important;
+    }
+
+/* -- 3. NAVBAR PUTIH BERSIH -- */
+.main-header.navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.main-header .nav-link {
+    color: #555 !important;
+}
+
+.main-header .user-menu .d-md-inline {
+    color: var(--c-dark-text) !important;
+}
+
+
+/* -- 4. SMALL BOX GRADASI BIRU MONOKROMATIK -- */
+.small-box.bg-info {
+    background: linear-gradient(135deg, var(--blue-darkest), var(--blue-dark)) !important;
+    color: var(--c-white-text) !important;
+}
+
+.small-box.bg-success {
+    background: linear-gradient(135deg, var(--blue-dark), var(--blue-medium)) !important;
+    color: var(--c-white-text) !important;
+}
+
+.small-box.bg-warning {
+    background: linear-gradient(135deg, var(--blue-medium), var(--blue-light)) !important;
+    color: var(--c-white-text) !important;
+}
+
+.small-box.bg-danger {
+    background: var(--blue-lightest-bg) !important;
+    color: var(--blue-lightest-text) !important;
+}
+
+    .small-box.bg-danger .inner h3,
+    .small-box.bg-danger .inner p,
+    .small-box.bg-danger .small-box-footer {
+        color: var(--blue-lightest-text) !important;
+    }
+
+    .small-box.bg-danger .icon i {
+        color: rgba(0, 0, 0, 0.15) !important;
+    }
+
+    .small-box.bg-danger .small-box-footer {
+        background-color: rgba(0, 0, 0, 0.1) !important;
+    }
+
+
+/* -- 5. KOMPONEN LAIN DI DASHBOARD -- */
+.card.card-danger .card-header {
+    background-color: var(--blue-medium) !important;
+    color: var(--c-white-text) !important;
+    border-color: var(--blue-medium) !important;
+}
+
+
+/*
+=================================================
+==     GAYA UNTUK HALAMAN LOGIN MINIMALIS      ==
+=================================================
+*/
+
+/* -- 1. LATAR BELAKANG HALAMAN LOGIN -- */
+.login-page {
+    background: linear-gradient(180deg, #E3F2FD, #f4f6f9) !important;
+}
+
+/* -- 2. JUDUL & KOTAK LOGIN -- */
+.login-logo a {
+    color: var(--blue-darkest) !important;
+    text-shadow: none !important;
+}
+
+.login-box .card {
+    background: #ffffff !important;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1) !important;
+    border : none !important
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+}
+
+/* -- 3. FORM DI DALAM KOTAK LOGIN -- */
+.login-card-body .login-box-msg,
+.login-card-body .form-control::placeholder {
+    color: #6c757d !important;
+}
+
+.icheck-primary > label {
+    color: var(--c-dark-text) !important;
+}
+
+.login-card-body .btn-primary {
+    background-color: var(--blue-medium) !important;
+    border-color: var(--blue-medium) !important;
+}
+
+    .login-card-body .btn-primary:hover {
+        background-color: var(--blue-dark) !important;
+        border-color: var(--blue-dark) !important;
+    }
+
+.icheck-primary > input:checked + label::before {
+    background-color: var(--blue-medium) !important;
+    border-color: var(--blue-medium) !important;
 }

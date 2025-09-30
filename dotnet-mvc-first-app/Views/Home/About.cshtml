@@ -1,9 +1,45 @@
 ﻿@{
-    ViewData["Title"] = "About Page";
+    ViewData["Title"] = "About Pagee";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Riwayat Pendidikan</h1>
+    <div class="card">
+        <div class="card-header">
+            <h3 class="card-title">@ViewData["Title"]</h3>
+        </div>
+        <div class="card-body">
+            <table class="table table-bordered table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th style="width: 10px">No</th>
+                        <th>Sekolah</th>
+                        <th>Jenjang</th>
+                        <th style="width: 150px">Tahun Lulus</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1.</td>
+                        <td>SD Al Irsyad Al Islamiyyah</td>
+                        <td>Sekolah Dasar</td>
+                        <td>2018</td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td>SD Al Irsyad Al Islamiyyah</td>
+                        <td>Sekolah Menengah Pertama</td>
+                        <td>2021</td>
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td>SMA Al Irsyad Al Islamiyyah</td>
+                        <td>Sekolah Menengah Atas</td>
+                        <td>2024</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 </div>
 

@@ -1,0 +1,195 @@
+﻿@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<div class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1 class="m-0">Dashboard</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 col-6">
+                <div class="small-box bg-info">
+                    <div class="inner">
+                        <h3>3</h3>
+                        <p>Total Lomba Diikuti</p>
+                    </div>
+                    <div class="icon"><i class="fas fa-trophy"></i></div>
+                    <a href="#" class="small-box-footer">Lihat Detail <i class="fas fa-arrow-circle-right"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6">
+                <div class="small-box bg-success">
+                    <div class="inner">
+                        <h3>1</h3>
+                        <p>Jumlah Kemenangan</p>
+                    </div>
+                    <div class="icon"><i class="fas fa-medal"></i></div>
+                    <a href="#" class="small-box-footer">Lihat Detail <i class="fas fa-arrow-circle-right"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6">
+                <div class="small-box bg-warning">
+                    <div class="inner">
+                        <h3>#3</h3>
+                        <p>Peringkat Tertinggi</p>
+                    </div>
+                    <div class="icon"><i class="fas fa-chart-line"></i></div>
+                    <a href="#" class="small-box-footer">Lihat Detail <i class="fas fa-arrow-circle-right"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6">
+                <div class="small-box bg-danger">
+                    <div class="inner">
+                        <h3>5<sup style="font-size: 20px">%</sup></h3>
+                        <p>Win Rate</p>
+                    </div>
+                    <div class="icon"><i class="fas fa-percentage"></i></div>
+                    <a href="#" class="small-box-footer">Lihat Detail <i class="fas fa-arrow-circle-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <section class="col-lg-7 connectedSortable">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">
+                            <i class="ion ion-clipboard mr-1"></i>
+                            Daftar Tugas Proyek
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <ul class="todo-list" data-widget="todo-list">
+                            <li class="done">
+                                <span class="handle"><i class="fas fa-ellipsis-v"></i><i class="fas fa-ellipsis-v"></i></span>
+                                <div class="icheck-primary d-inline ml-2"><input type="checkbox" value="" name="todo2" id="todoCheck2" checked><label for="todoCheck2"></label></div>
+                                <span class="text">Buat halaman dashboard responsif</span>
+                                <small class="badge badge-info"><i class="far fa-clock"></i> 9 jam</small>
+                            </li>
+                            <li>
+                                <span class="handle"><i class="fas fa-ellipsis-v"></i><i class="fas fa-ellipsis-v"></i></span>
+                                <div class="icheck-primary d-inline ml-2"><input type="checkbox" value="" name="todo3" id="todoCheck3"><label for="todoCheck3"></label></div>
+                                <span class="text">Data Warehouse WWI</span>
+                                <small class="badge badge-info"><i class="far fa-clock"></i> 1 hari lagi</small>
+                            </li>
+                            <li>
+                                <span class="handle"><i class="fas fa-ellipsis-v"></i><i class="fas fa-ellipsis-v"></i></span>
+                                <div class="icheck-primary d-inline ml-2"><input type="checkbox" value="" name="todo3" id="todoCheck3"><label for="todoCheck3"></label></div>
+                                <span class="text">Memperbaiki SOP</span>
+                                <small class="badge badge-warning"><i class="far fa-clock"></i> 1 bulan lagi</small>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="card-footer clearfix">
+                        <button type="button" class="btn btn-primary float-right"><i class="fas fa-plus"></i> Tambah Tugas</button>
+                    </div>
+                </div>
+
+                <div class="card direct-chat direct-chat-primary">
+                    <div class="card-header">
+                        <h3 class="card-title">Chat Terbaru</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="direct-chat-messages">
+                            <div class="direct-chat-msg">
+                                <div class="direct-chat-infos clearfix">
+                                    <span class="direct-chat-name float-left">Alexander Pierce</span>
+                                    <span class="direct-chat-timestamp float-right">23 Sept 2:00 pm</span>
+                                </div>
+                                <img class="direct-chat-img" src="~/dist/img/user1-128x128.jpg" alt="message user image">
+                                <div class="direct-chat-text">Ayo ikut lomba UI/UX!</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <form action="#" method="post">
+                            <div class="input-group">
+                                <input type="text" name="message" placeholder="Ketik pesan ..." class="form-control">
+                                <span class="input-group-append">
+                                    <button type="button" class="btn btn-primary">Kirim</button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <section class="col-lg-5 connectedSortable">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Lomba Terbaru Diikuti</h3>
+                    </div>
+                    <div class="card-body p-0">
+                        <table class="table table-striped">
+                            <thead><tr><th>Nama Lomba</th><th>Tanggal</th><th>Peringkat</th></tr></thead>
+                            <tbody>
+                                <tr><td>Lomba COSMIC</td><td>15 Sep 2024</td><td><span class="badge bg-warning">Peserta</span></td></tr>
+                                <tr><td>Lomba ASTERO</td><td>2 Agu 2025</td><td><span class="badge bg-primary">Juara 3</span></td></tr>
+                                <tr><td>Lomba AADC</td><td>10 Jul 2025</td><td><span class="badge bg-warning">Peserta</span></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="card card-danger">
+                    <div class="card-header">
+                        <h3 class="card-title">Distribusi Kemenangan</h3>
+                    </div>
+                    <div class="card-body">
+                        <canvas id="donutChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    <script>
+        $(function () {
+            'use strict'
+
+            // --- Fungsionalitas To Do List ---
+            $('.todo-list').sortable({
+                placeholder: 'sort-highlight',
+                handle: '.handle',
+                forcePlaceholderSize: true,
+                zIndex: 999999
+            });
+
+            // --- GRAFIK DONUT BARU ---
+            var donutChartCanvas = $('#donutChart').get(0).getContext('2d');
+            var donutData = {
+                labels: [
+                    'Juara 1',
+                    'Juara 2',
+                    'Juara 3',
+                    'Peserta',
+                ],
+                datasets: [
+                    {
+                        data: [0, 0, 1, 2], // Contoh data: 3x Juara 1, 2x Juara 2, dst.
+                        backgroundColor: ['#f56954', '#00a65a', '#f39c12', '#00c0ef'],
+                    }
+                ]
+            };
+            var donutOptions = {
+                maintainAspectRatio: false,
+                responsive: true,
+            };
+
+            new Chart(donutChartCanvas, {
+                type: 'doughnut',
+                data: donutData,
+                options: donutOptions
+            });
+        });
+    </script>
+}
